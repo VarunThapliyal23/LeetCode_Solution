@@ -1,2 +1,2 @@
 # LeetCode_Solutions
-In this repo I'll daily post a solution of a Leetcode question that I've attempted.
+In this repo I'm daily posting a solution of a Leetcode question that I've attempted.
