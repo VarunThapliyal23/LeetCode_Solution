@@ -1,0 +1,30 @@
+class Solution {
+    public String addStrings(String num1, String num2) {
+        String res = "";
+        int ival,jval;
+        int carry = 0;
+
+        int i = num1.length()-1;
+        int j = num2.length()-1;
+
+        while(i>=0 || j>=0 || carry!=0)
+        {
+            if(i>=0)
+            ival = num1.charAt(i) - '0';
+            else
+            ival = 0;
+            
+            if(j>=0)
+            jval = num2.charAt(j) - '0';
+            else
+            jval = 0;
+
+            int sum = ival+jval+carry;
+            res = (sum%10) + res;
+            carry = sum/10;
+
+            i--; j--;
+        }
+        return res;
+    }
+}
